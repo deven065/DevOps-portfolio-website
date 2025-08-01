@@ -23,32 +23,57 @@
   }
 }
 
+/* === Header Colors === */
 html.light {
-  --background: #ffffff;
-  --foreground: #0b0f19; /* strong dark text */
-  --header-bg: #ffffff;
-  --header-border: #e5e7eb;
-  --body-bg: #ffffff;   /* ensure Hero background is white */
-  --text-main: #0b0f19; /* ensure Hero text is black */
-  --button-border-light: #60a5fa;
-  --skills-bg: #f9fafb; /* light grey background */
-  --skills-title: #0b0f19;     /* Title black in light mode */
-  --skills-card-bg: #ffffff;   /* Pure white card */
-  --skills-text: #0b0f19;      /* Skill name black in light mode */
+  --header-bg: #ffffff;      /* White header */
+  --header-text: #0b0f19;    /* Black text for nav links */
+  --header-border: #e5e7eb;  /* Subtle light border */
 }
-
 
 html.dark {
-  --background: #0b1120;
-  --foreground: #ededed;
-  --header-bg: #0b1120;
-  --header-border: #1f2937;
-  --button-border-light: #ffffff;
-  --skills-bg: #0b1120; /* light blue-ish background for dark mode */
-  --skills-title: #ffffff;     /* white title for heading in dark mode */
-  --skills-card-bg: #1a1a1a;   /* dark cards in dark mode */
-  --skills-text: #ffffff;      /* white skill name in dark mode */
+  --header-bg: #0b1120;      /* Dark header */
+  --header-text: #ffffff;    /* White text for nav links */
+  --header-border: #1f2937;  /* Subtle dark border */
 }
+
+
+/* === Skills Section Variables === */
+html.light {
+  --skills-bg: #f9fafb;        /* light grey page background */
+  --skills-title: #0b0f19;     /* black titles */
+  --skills-card-bg: #ffffff;   /* white cards */
+  --skills-text: #0b0f19;      /* black skill name */
+}
+
+html.dark {
+  --skills-bg: #0b1120;        /* dark blue page background */
+  --skills-title: #ffffff;     /* white titles */
+  --skills-card-bg: #1a1a1a;   /* dark cards */
+  --skills-text: #ffffff;      /* white skill name */
+}
+
+/* === Projects Section Variables === */
+html.light {
+  --projects-bg: #ffffff;         /* same as Hero light */
+  --projects-title: #0b0f19;      /* black title */
+  --projects-card-bg: #ffffff;    /* white card */
+  --projects-card-border: #e5e7eb;
+  --projects-text: #0b0f19;
+  --projects-tag-bg: #f9fafb;
+  --projects-tag-text: #0b0f19;
+}
+
+html.dark {
+  --projects-bg: #0d1117;         /* SAME as Hero dark */
+  --projects-title: #ffffff;
+  --projects-card-bg: #1a1a1a;    /* dark cards */
+  --projects-card-border: #1f2937;
+  --projects-text: #ffffff;
+  --projects-tag-bg: #1f2937;
+  --projects-tag-text: #ededed;
+}
+
+
 
 body {
   background: var(--background);
