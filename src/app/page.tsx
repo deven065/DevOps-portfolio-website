@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
+import Skills from "./components/Skills";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
     >
       <Header />
       <Hero />
+      <Skills />
     </main>
   );
 }

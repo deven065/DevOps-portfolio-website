@@ -31,6 +31,10 @@ html.light {
   --body-bg: #ffffff;   /* ensure Hero background is white */
   --text-main: #0b0f19; /* ensure Hero text is black */
   --button-border-light: #60a5fa;
+  --skills-bg: #f9fafb; /* light grey background */
+  --skills-title: #0b0f19;     /* Title black in light mode */
+  --skills-card-bg: #ffffff;   /* Pure white card */
+  --skills-text: #0b0f19;      /* Skill name black in light mode */
 }
 
 
@@ -40,6 +44,10 @@ html.dark {
   --header-bg: #0b1120;
   --header-border: #1f2937;
   --button-border-light: #ffffff;
+  --skills-bg: #0b1120; /* light blue-ish background for dark mode */
+  --skills-title: #ffffff;     /* white title for heading in dark mode */
+  --skills-card-bg: #1a1a1a;   /* dark cards in dark mode */
+  --skills-text: #ffffff;      /* white skill name in dark mode */
 }
 
 body {
