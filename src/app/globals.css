@@ -1,26 +1,62 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --header-bg: #ffffff;
+  --header-border: #e5e7eb;
+  --body-bg: #ffffff;
+  --text-main: #0b0f19;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+.dark {
+  --header-bg: #0b1120;
+  --header-border: #1f2937;
+  --body-bg: #0d1117;
+  --text-main: #ffffff;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #0b1120;
     --foreground: #ededed;
+    --header-bg: #0b1120;
+    --header-border: #1f2937;
   }
+}
+
+html.light {
+  --background: #ffffff;
+  --foreground: #0b0f19; /* strong dark text */
+  --header-bg: #ffffff;
+  --header-border: #e5e7eb;
+  --body-bg: #ffffff;   /* ensure Hero background is white */
+  --text-main: #0b0f19; /* ensure Hero text is black */
+  --button-border-light: #60a5fa;
+}
+
+
+html.dark {
+  --background: #0b1120;
+  --foreground: #ededed;
+  --header-bg: #0b1120;
+  --header-border: #1f2937;
+  --button-border-light: #ffffff;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-geist-sans), sans-serif;
+}
+
+/* Social icon hover colors for light mode */
+html.light .social-github:hover {
+  color: #000000; /* Black for GitHub */
+}
+
+html.light .social-linkedin:hover {
+  color: #2563eb; /* Blue for LinkedIn (blue-600) */
+}
+
+html.light .social-google:hover {
+  color: #ef4444; /* Red for Google (red-500) */
 }
