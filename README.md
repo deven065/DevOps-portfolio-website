@@ -1,36 +1,82 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# DevOps Portfolio
 
-## Getting Started
+A modern, responsive portfolio web application built with **Next.js 15**, **React 19**, and **Tailwind CSS 4**, designed to showcase your DevOps projects and skills. This project features clean UI components, optimized performance, and scalable architecture.
 
-First, run the development server:
+---
+
+## 🚀 Tech Stack
+
+- **Framework:** [Next.js 15](https://nextjs.org/)
+- **UI:** [React 19](https://react.dev/), [Tailwind CSS 4](https://tailwindcss.com/)
+- **Icons:** [Lucide React](https://lucide.dev/), [React Icons](https://react-icons.github.io/react-icons/)
+- **Language:** TypeScript
+- **Linting:** ESLint
+- **Build Tooling:** PostCSS, Autoprefixer
+
+---
+
+## 📦 Installation
+
+> Ensure **Node.js (v18 or later)** and **npm** are installed.
+
+1. **Clone the repository:**
+
+```bash
+git clone https://github.com/deven065/DevOps-portfolio-website.git
+cd devops-portfolio
+```
+
+2. **Install dependencnies:**
+
+```bash
+npm install
+```
+
+🛠️ Usage
+
+**Start the development server:**
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+```
+Visit http://localhost:3000 to view the app in your browser.
+
+**Build for production:**
+```bash
+npm run build
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+**Start the production server**
+```bash
+npm run start
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+**Lint the code**
+```bash
+npm run lint
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+💡 Folder Structure
+```bash
+devops-portfolio/
+├── pages/              # App routes
+├── components/         # Reusable components
+├── public/             # Static assets
+├── styles/             # Tailwind & global styles
+├── tsconfig.json       # TypeScript config
+├── tailwind.config.js  # Tailwind CSS config
+└── package.json
+```
 
-## Learn More
+🤝 Contributing
+Contributions are welcome! Follow the steps below:
 
-To learn more about Next.js, take a look at the following resources:
+1. Fork the repository
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2. Create your feature branch: git checkout -b feature/your-feature
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+3. Commit your changes: git commit -m "feat: add new feature"
 
-## Deploy on Vercel
+4. Push to the branch: git push origin feature/your-feature
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+5. Open a Pull Request
