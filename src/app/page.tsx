@@ -5,6 +5,7 @@ import Skills from "./components/Skills";
 import ProjectsSection from "./components/FeaturedProjects";
 import ExperienceCard from "./components/ExperienceCard";
 import ConnectSection from "./components/ConnectSection";
+import Footer from "./components/Footer";
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
       <ProjectsSection />
       <ExperienceCard />
       <ConnectSection />
+      <Footer />
     </main>
   );
 }
