@@ -3,6 +3,8 @@ import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Skills from "./components/Skills";
 import ProjectsSection from "./components/FeaturedProjects";
+import ExperienceCard from "./components/ExperienceCard";
+import ConnectSection from "./components/ConnectSection";
 
 export default function Home() {
   return (
@@ -18,6 +20,8 @@ export default function Home() {
       <Hero />
       <Skills />
       <ProjectsSection />
+      <ExperienceCard />
+      <ConnectSection />
     </main>
   );
 }
