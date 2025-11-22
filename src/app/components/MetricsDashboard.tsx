@@ -66,9 +66,9 @@ export default function MetricsDashboard() {
     >
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
-        <div className="text-center mb-12">
+        <div className="text-center mb-8 sm:mb-12 px-4">
           <h2
-            className="text-4xl font-bold mb-4"
+            className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4"
             style={{ color: 'var(--skills-title)' }}
           >
             Impact by{' '}
@@ -76,13 +76,13 @@ export default function MetricsDashboard() {
               Numbers
             </span>
           </h2>
-          <p className="text-gray-400 max-w-2xl mx-auto">
+          <p className="text-sm sm:text-base text-gray-400 max-w-2xl mx-auto">
             Measurable results and tangible impact delivered through DevOps excellence
           </p>
         </div>
 
         {/* Metrics Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
           {metrics.map((metric, index) => (
             <motion.div
               key={index}

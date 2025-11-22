@@ -108,22 +108,22 @@ export default function FeaturedProjects() {
         color: "var(--projects-text)",
       }}
     >
-      <div className="max-w-7xl mx-auto px-6">
-        <div className="text-center mb-12">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6">
+        <div className="text-center mb-8 sm:mb-12">
           <h2
-            className="text-4xl font-bold mb-4"
+            className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4"
             style={{ color: "var(--projects-title)" }}
           >
             Featured <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-pink-500">Projects</span>
           </h2>
-          <p className="text-lg mb-4 text-gray-400 max-w-3xl mx-auto">
+          <p className="text-sm sm:text-base md:text-lg mb-4 text-gray-400 max-w-3xl mx-auto px-4">
             Production-grade DevOps implementations demonstrating expertise in cloud architecture, 
             automation, and infrastructure optimization
           </p>
         </div>
 
         {/* Projects Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8">
           {projects.map((project, index) => (
             <motion.div
               key={index}
@@ -142,7 +142,7 @@ export default function FeaturedProjects() {
                 boxShadow: "0 25px 50px -12px rgba(0, 0, 0, 0.25)",
                 transition: { duration: 0.3 }
               }}
-              className="flex flex-col rounded-2xl p-6 border shadow-md hover:shadow-2xl transition-all duration-300 hover-glow group gpu-accelerated"
+              className="flex flex-col rounded-xl sm:rounded-2xl p-4 sm:p-6 border shadow-md hover:shadow-2xl transition-all duration-300 hover-glow group gpu-accelerated"
               style={{
                 backgroundColor: "var(--projects-card-bg)",
                 borderColor: "var(--projects-card-border)",
@@ -153,7 +153,7 @@ export default function FeaturedProjects() {
             >
               {/* Header */}
               <div className="flex justify-between items-start mb-4">
-                <h3 className="text-xl font-bold leading-snug flex-1 pr-4">
+                <h3 className="text-lg sm:text-xl font-bold leading-snug flex-1 pr-2 sm:pr-4">
                   {project.title}
                 </h3>
                 <span

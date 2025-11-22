@@ -20,9 +20,9 @@ const Hero = () => {
                 scale,
             }}
         >
-            {/* Animated Background Elements with more variety */}
+            {/* Animated Background Elements with more variety - Hidden on small mobile */}
             <motion.div
-                className="absolute top-20 left-10 text-blue-500 opacity-10"
+                className="absolute top-20 left-5 sm:left-10 text-blue-500 opacity-10 hidden sm:block"
                 animate={{ 
                     y: [0, -30, 0],
                     rotate: [0, 15, 0],
@@ -34,10 +34,10 @@ const Hero = () => {
                     ease: "easeInOut"
                 }}
             >
-                <Cloud size={60} />
+                <Cloud size={40} className="sm:w-[60px] sm:h-[60px]" />
             </motion.div>
             <motion.div
-                className="absolute bottom-40 right-20 text-purple-500 opacity-10"
+                className="absolute bottom-40 right-5 sm:right-20 text-purple-500 opacity-10 hidden sm:block"
                 animate={{ 
                     y: [0, 30, 0],
                     rotate: [0, -15, 0],
@@ -49,10 +49,10 @@ const Hero = () => {
                     ease: "easeInOut"
                 }}
             >
-                <Rocket size={50} />
+                <Rocket size={35} className="sm:w-[50px] sm:h-[50px]" />
             </motion.div>
             <motion.div
-                className="absolute top-1/3 right-10 text-green-500 opacity-10"
+                className="absolute top-1/3 right-5 sm:right-10 text-green-500 opacity-10 hidden md:block"
                 animate={{ 
                     x: [0, 20, 0],
                     rotate: [0, 10, 0]
@@ -123,7 +123,7 @@ const Hero = () => {
 
             {/* Main Heading with Typing Animation */}
             <motion.h1 
-                className="text-4xl sm:text-6xl font-extrabold leading-tight mb-6"
+                className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight mb-4 sm:mb-6 px-4"
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.8, delay: 0.2 }}
@@ -148,7 +148,7 @@ const Hero = () => {
 
             {/* Description */}
             <motion.p 
-                className="text-[var(--text-main)] dark:text-gray-400 max-w-2xl text-lg sm:text-xl mb-8"
+                className="text-[var(--text-main)] dark:text-gray-400 max-w-2xl text-base sm:text-lg md:text-xl mb-6 sm:mb-8 px-4"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.8, delay: 0.4 }}
@@ -160,7 +160,7 @@ const Hero = () => {
 
             {/* Buttons */}
             <motion.div 
-                className="flex flex-col sm:flex-row gap-4 mb-8"
+                className="flex flex-col sm:flex-row gap-3 sm:gap-4 mb-6 sm:mb-8 w-full max-w-lg px-4"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.6 }}
@@ -168,29 +168,29 @@ const Hero = () => {
                 <motion.a
                     href="/Deven's_Resume.pdf"
                     download
-                    className="bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600 text-white px-8 py-3 rounded-md flex items-center justify-center gap-2 font-semibold shadow-lg"
+                    className="bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600 text-white px-6 sm:px-8 py-3 rounded-md flex items-center justify-center gap-2 font-semibold shadow-lg text-sm sm:text-base"
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                 >
-                    <Download /> Download Resume
+                    <Download size={18} /> Download Resume
                 </motion.a>
 
                 <motion.a
                     href="#contact"
-                    className="button-link border border-blue-400 dark:border-white hover:bg-gray-100 dark:hover:bg-white hover:text-black dark:hover:text-black px-8 py-3 rounded-md flex items-center justify-center gap-2 transition duration-300 font-semibold"
+                    className="button-link border border-blue-400 dark:border-white hover:bg-gray-100 dark:hover:bg-white hover:text-black dark:hover:text-black px-6 sm:px-8 py-3 rounded-md flex items-center justify-center gap-2 transition duration-300 font-semibold text-sm sm:text-base"
                     style={{
                         border: '1px solid var(--button-border-light)',
                     }}
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                 >
-                    <FaEnvelope /> Get in Touch
+                    <FaEnvelope size={18} /> Get in Touch
                 </motion.a>
             </motion.div>
 
             {/* Stats Row */}
             <motion.div 
-                className="flex flex-wrap justify-center gap-8 mb-8 max-w-3xl"
+                className="flex flex-wrap justify-center gap-4 sm:gap-6 md:gap-8 mb-6 sm:mb-8 max-w-3xl px-4"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.8, delay: 0.8 }}

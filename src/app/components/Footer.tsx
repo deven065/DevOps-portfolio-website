@@ -10,11 +10,11 @@ export default function Footer() {
         borderColor: 'var(--projects-card-border)',
       }}
     >
-      <div className="max-w-6xl mx-auto px-4 py-6 flex flex-col md:flex-row items-center justify-between gap-4">
-        <p className="text-sm text-center md:text-left">
+      <div className="max-w-6xl mx-auto px-4 py-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <p className="text-xs sm:text-sm text-center sm:text-left">
           © {new Date().getFullYear()} DevOps Portfolio. Built with Next.js, TypeScript & Tailwind CSS.
         </p>
-        <div className="flex items-center gap-6 text-xl">
+        <div className="flex items-center gap-4 sm:gap-6 text-lg sm:text-xl">
           <a
             href="https://github.com/your-username"
             target="_blank"

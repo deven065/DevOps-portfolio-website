@@ -199,9 +199,9 @@ const Skills = () => {
       }}
     >
       {/* Section Title */}
-      <div className="text-center mb-12">
+      <div className="text-center mb-8 sm:mb-12 px-4">
         <h2
-          className="text-3xl sm:text-4xl font-extrabold mb-4"
+          className="text-2xl sm:text-3xl md:text-4xl font-extrabold mb-3 sm:mb-4"
           style={{
             color: "var(--skills-title)",
           }}
@@ -211,17 +211,17 @@ const Skills = () => {
             Expertise
           </span>
         </h2>
-        <p className="text-gray-500 dark:text-gray-400 max-w-xl mx-auto">
+        <p className="text-sm sm:text-base text-gray-500 dark:text-gray-400 max-w-xl mx-auto">
           Comprehensive DevOps toolkit spanning cloud platforms, automation, orchestration, and
           monitoring solutions
         </p>
       </div>
 
       {/* Category Filter */}
-      <div className="flex flex-wrap justify-center gap-3 mb-12 max-w-4xl mx-auto">
+      <div className="flex flex-wrap justify-center gap-2 sm:gap-3 mb-8 sm:mb-12 max-w-4xl mx-auto px-4">
         <button
           onClick={() => setSelectedCategory(null)}
-          className={`px-4 py-2 rounded-lg border transition-all duration-300 ${
+          className={`px-3 sm:px-4 py-2 rounded-lg border transition-all duration-300 text-xs sm:text-sm ${
             selectedCategory === null
               ? "bg-blue-500 text-white border-blue-500"
               : "border-gray-300 dark:border-gray-600 hover:border-blue-500"
@@ -233,13 +233,13 @@ const Skills = () => {
           <button
             key={index}
             onClick={() => setSelectedCategory(category.category)}
-            className={`px-4 py-2 rounded-lg border transition-all duration-300 ${
+            className={`px-3 sm:px-4 py-2 rounded-lg border transition-all duration-300 text-xs sm:text-sm ${
               selectedCategory === category.category
                 ? "bg-blue-500 text-white border-blue-500"
                 : "border-gray-300 dark:border-gray-600 hover:border-blue-500"
             }`}
           >
-            {category.icon} {category.category}
+            <span className="hidden sm:inline">{category.icon} </span>{category.category}
           </button>
         ))}
       </div>
@@ -255,13 +255,13 @@ const Skills = () => {
             viewport={{ once: true }}
           >
             <h3
-              className="text-2xl font-bold mb-6 flex items-center gap-2"
+              className="text-xl sm:text-2xl font-bold mb-4 sm:mb-6 flex items-center gap-2 px-4"
               style={{ color: "var(--skills-title)" }}
             >
-              <span className="text-3xl">{category.icon}</span>
+              <span className="text-2xl sm:text-3xl">{category.icon}</span>
               {category.category}
             </h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 px-4">
               {category.skills.map((skill, index) => (
                 <motion.div
                   key={index}
