@@ -14,11 +14,11 @@ interface Experience {
 const experiences: Experience[] = [
   {
     role: 'SDE - DevOps Engineer',
-    company: 'Accent Techno Solutions Pvt Ltd',
+    company: 'LogiNext',
     duration: 'May 2025 – Present',
     location: 'Remote',
     summary:
-      'Leading DevOps initiatives for enterprise clients, architecting cloud-native solutions, and implementing robust CI/CD pipelines serving 2M+ users. Drove infrastructure automation resulting in 60% faster deployments and 40% cost reduction.',
+      'Working at a leading product-based logistics technology company, architecting cloud-native solutions, and implementing robust CI/CD pipelines serving 2M+ users. Drove infrastructure automation resulting in 60% faster deployments and 40% cost reduction.',
     achievements: [
       '🚀 Reduced deployment time from 2 hours to 30 minutes (60% improvement)',
       '☁️ Migrated 50+ microservices to Kubernetes on AWS EKS with zero downtime',
