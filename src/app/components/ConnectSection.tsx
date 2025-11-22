@@ -9,7 +9,7 @@ export default function ConnectSection() {
       style={{ backgroundColor: 'var(--projects-bg)' }}
     >
       <h2 className="text-4xl font-bold" style={{ color: 'var(--projects-title)' }}>
-        Let's <span className="text-orange-500">Connect</span>
+        Let&apos;s <span className="text-orange-500">Connect</span>
       </h2>
 
       <p
@@ -17,7 +17,7 @@ export default function ConnectSection() {
         style={{ color: 'var(--projects-text)' }}
       >
         Ready to discuss DevOps opportunities, collaborate on projects, or just chat about
-        cloud infrastructure? I'd love to hear from you!
+        cloud infrastructure? I&apos;d love to hear from you!
       </p>
 
       <div className="mt-8 flex flex-col sm:flex-row justify-center items-center gap-4">

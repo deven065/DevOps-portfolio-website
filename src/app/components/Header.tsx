@@ -26,13 +26,13 @@ const Header = () => {
 
   return (
     <header
-      className="sticky top-0 z-50 w-full border-b"
+      className="sticky top-0 z-50 w-full border-b backdrop-blur-md bg-opacity-80 transition-all duration-300"
       style={{
         backgroundColor: 'var(--header-bg)',
         borderColor: 'var(--header-border)',
       }}
     >
-      <div className="mx-auto max-w-7xl flex items-center justify-between px-6 py-4">
+      <div className="mx-auto max-w-7xl flex items-center justify-between px-6 py-4 gpu-accelerated">
         <h1 className="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-500 whitespace-nowrap">
           DevOps Portfolio
         </h1>
@@ -40,10 +40,10 @@ const Header = () => {
         <div className="flex items-center gap-6">
           <nav className="hidden sm:flex gap-6 text-sm font-semibold">
             <Link
-              href="#about"
+              href="#skills"
               className="transition-colors hover:text-blue-600 dark:hover:text-blue-400"
             >
-              About
+              Skills
             </Link>
             <Link
               href="#projects"
