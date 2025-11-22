@@ -17,7 +17,7 @@ const certifications: Certification[] = [
   {
     name: 'AWS Certified Solutions Architect - Associate',
     issuer: 'Amazon Web Services',
-    date: 'Valid until Dec 2026',
+    date: 'Issued Aug 2024 • Valid until Aug 2027',
     credentialId: 'AWS-SAA-2024',
     icon: 'https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg',
     verifyLink: '#',

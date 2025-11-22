@@ -127,6 +127,20 @@ html {
   }
 }
 
+/* Light mode glow pulse - more subtle */
+html.light .animate-glow-pulse {
+  animation: glow-pulse-light 2s ease-in-out infinite;
+}
+
+@keyframes glow-pulse-light {
+  0%, 100% {
+    box-shadow: 0 0 15px rgba(59, 130, 246, 0.15);
+  }
+  50% {
+    box-shadow: 0 0 30px rgba(59, 130, 246, 0.3);
+  }
+}
+
 /* Gradient shift animation */
 @keyframes gradient-shift {
   0% {
@@ -231,6 +245,15 @@ html {
   animation: shimmer 2s infinite;
 }
 
+html.light .animate-shimmer {
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(59, 130, 246, 0.08),
+    transparent
+  );
+}
+
 .animate-reveal {
   animation: reveal 0.6s ease-out forwards;
 }
@@ -248,6 +271,10 @@ html {
 .hover-lift:hover {
   transform: translateY(-8px) scale(1.02);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+html.light .hover-lift:hover {
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
 }
 
 .hover-glow {
@@ -269,6 +296,11 @@ html {
 
 .hover-glow:hover::before {
   opacity: 0.6;
+}
+
+html.light .hover-glow:hover::before {
+  opacity: 0.3;
+  filter: blur(15px);
 }
 
 /* Staggered reveal */

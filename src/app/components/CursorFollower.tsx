@@ -14,7 +14,12 @@ export default function CursorFollower() {
 
     const handleMouseOver = (e: MouseEvent) => {
       const target = e.target as HTMLElement;
-      if (
+      // Exclude social media icons from cursor effect
+      const isSocialIcon = target.closest('.social-github, .social-linkedin, .social-google, .social-email');
+      
+      if (isSocialIcon) {
+        setIsHovering(false);
+      } else if (
         target.tagName === 'BUTTON' ||
         target.tagName === 'A' ||
         target.closest('button') ||

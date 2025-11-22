@@ -35,7 +35,7 @@ export default function ConnectSection() {
 
         {/* LinkedIn Button */}
         <a
-          href="https://linkedin.com/in/your-profile"
+          href="https://www.linkedin.com/in/dipenrikkaame/"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center gap-2 px-6 py-3 rounded-md font-medium transition-colors border hover:bg-orange-600"

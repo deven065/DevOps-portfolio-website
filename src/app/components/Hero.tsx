@@ -22,7 +22,7 @@ const Hero = () => {
         >
             {/* Animated Background Elements with more variety - Hidden on small mobile */}
             <motion.div
-                className="absolute top-20 left-5 sm:left-10 text-blue-500 opacity-10 hidden sm:block"
+                className="absolute top-20 left-5 sm:left-10 text-blue-500 opacity-20 dark:opacity-10 hidden sm:block"
                 animate={{ 
                     y: [0, -30, 0],
                     rotate: [0, 15, 0],
@@ -37,7 +37,7 @@ const Hero = () => {
                 <Cloud size={40} className="sm:w-[60px] sm:h-[60px]" />
             </motion.div>
             <motion.div
-                className="absolute bottom-40 right-5 sm:right-20 text-purple-500 opacity-10 hidden sm:block"
+                className="absolute bottom-40 right-5 sm:right-20 text-purple-500 opacity-20 dark:opacity-10 hidden sm:block"
                 animate={{ 
                     y: [0, 30, 0],
                     rotate: [0, -15, 0],
@@ -52,7 +52,7 @@ const Hero = () => {
                 <Rocket size={35} className="sm:w-[50px] sm:h-[50px]" />
             </motion.div>
             <motion.div
-                className="absolute top-1/3 right-5 sm:right-10 text-green-500 opacity-10 hidden md:block"
+                className="absolute top-1/3 right-5 sm:right-10 text-green-500 opacity-20 dark:opacity-10 hidden md:block"
                 animate={{ 
                     x: [0, 20, 0],
                     rotate: [0, 10, 0]
@@ -66,7 +66,7 @@ const Hero = () => {
                 <GitBranch size={45} />
             </motion.div>
             <motion.div
-                className="absolute top-1/4 left-1/4 text-orange-500 opacity-10"
+                className="absolute top-1/4 left-1/4 text-orange-500 opacity-20 dark:opacity-10"
                 animate={{ 
                     y: [0, -25, 0],
                     x: [0, 15, 0],
@@ -81,7 +81,7 @@ const Hero = () => {
                 <Code size={55} />
             </motion.div>
             <motion.div
-                className="absolute bottom-1/4 left-16 text-pink-500 opacity-10"
+                className="absolute bottom-1/4 left-16 text-pink-500 opacity-20 dark:opacity-10"
                 animate={{ 
                     y: [0, 20, 0],
                     scale: [1, 1.15, 1]
@@ -95,7 +95,7 @@ const Hero = () => {
                 <Database size={48} />
             </motion.div>
             <motion.div
-                className="absolute top-2/3 right-1/4 text-cyan-500 opacity-10"
+                className="absolute top-2/3 right-1/4 text-cyan-500 opacity-20 dark:opacity-10"
                 animate={{ 
                     x: [0, -18, 0],
                     rotate: [0, 25, 0]
@@ -228,7 +228,7 @@ const Hero = () => {
                 </motion.a>
                 <motion.a
                     className="social-linkedin text-[var(--text-main)] dark:text-gray-400 dark:hover:text-blue-600 transition-colors"
-                    href="https://linkedin.com/in/dev55"
+                    href="https://www.linkedin.com/in/dipenrikkaame/"
                     target="_blank"
                     rel="noopener noreferrer"
                     whileHover={{ scale: 1.2, rotate: -5 }}

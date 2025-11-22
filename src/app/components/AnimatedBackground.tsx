@@ -20,9 +20,9 @@ export default function AnimatedBackground() {
 
   return (
     <div className="fixed inset-0 pointer-events-none overflow-hidden z-0">
-      {/* Gradient orbs */}
+      {/* Gradient orbs - Plain colors in light mode, gradients in dark mode */}
       <motion.div
-        className="absolute top-0 left-1/4 w-96 h-96 rounded-full bg-gradient-to-r from-blue-500/10 to-purple-500/10 blur-3xl"
+        className="absolute top-0 left-1/4 w-96 h-96 rounded-full bg-blue-400/25 dark:bg-gradient-to-r dark:from-blue-500/10 dark:to-purple-500/10 blur-3xl"
         animate={{
           scale: [1, 1.2, 1],
           x: [0, 50, 0],
@@ -35,7 +35,7 @@ export default function AnimatedBackground() {
         }}
       />
       <motion.div
-        className="absolute bottom-0 right-1/4 w-96 h-96 rounded-full bg-gradient-to-r from-purple-500/10 to-pink-500/10 blur-3xl"
+        className="absolute bottom-0 right-1/4 w-96 h-96 rounded-full bg-purple-400/25 dark:bg-gradient-to-r dark:from-purple-500/10 dark:to-pink-500/10 blur-3xl"
         animate={{
           scale: [1, 1.3, 1],
           x: [0, -50, 0],
@@ -48,7 +48,7 @@ export default function AnimatedBackground() {
         }}
       />
       <motion.div
-        className="absolute top-1/2 left-1/2 w-96 h-96 rounded-full bg-gradient-to-r from-green-500/10 to-teal-500/10 blur-3xl"
+        className="absolute top-1/2 left-1/2 w-96 h-96 rounded-full bg-teal-400/25 dark:bg-gradient-to-r dark:from-green-500/10 dark:to-teal-500/10 blur-3xl"
         animate={{
           scale: [1, 1.15, 1],
           x: [0, -30, 0],
@@ -61,11 +61,11 @@ export default function AnimatedBackground() {
         }}
       />
 
-      {/* Floating particles */}
+      {/* Floating particles - Plain color in light mode */}
       {particles.map((particle) => (
         <motion.div
           key={particle.id}
-          className="absolute rounded-full bg-blue-500/20"
+          className="absolute rounded-full bg-blue-400/35 dark:bg-blue-500/20"
           style={{
             width: particle.size,
             height: particle.size,
@@ -75,7 +75,7 @@ export default function AnimatedBackground() {
           animate={{
             y: [0, -30, 0],
             x: [0, Math.random() * 20 - 10, 0],
-            opacity: [0.2, 0.5, 0.2],
+            opacity: [0.3, 0.6, 0.3],
           }}
           transition={{
             duration: 5 + Math.random() * 3,
@@ -86,9 +86,9 @@ export default function AnimatedBackground() {
         />
       ))}
 
-      {/* Grid pattern */}
+      {/* Grid pattern - More visible in light mode */}
       <div 
-        className="absolute inset-0 opacity-[0.03]"
+        className="absolute inset-0 opacity-[0.06] dark:opacity-[0.03]"
         style={{
           backgroundImage: `
             linear-gradient(to right, currentColor 1px, transparent 1px),

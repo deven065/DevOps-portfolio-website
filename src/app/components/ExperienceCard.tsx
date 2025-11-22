@@ -13,9 +13,9 @@ interface Experience {
 
 const experiences: Experience[] = [
   {
-    role: 'Senior DevOps Engineer',
-    company: 'Tech Solutions Inc.',
-    duration: 'Jan 2024 – Present',
+    role: 'SDE - DevOps Engineer',
+    company: 'Accent Techno Solutions Pvt Ltd',
+    duration: 'May 2025 – Present',
     location: 'Remote',
     summary:
       'Leading DevOps initiatives for enterprise clients, architecting cloud-native solutions, and implementing robust CI/CD pipelines serving 2M+ users. Drove infrastructure automation resulting in 60% faster deployments and 40% cost reduction.',
@@ -31,7 +31,7 @@ const experiences: Experience[] = [
   {
     role: 'DevOps Engineer',
     company: 'CloudScale Systems',
-    duration: 'Jul 2023 – Dec 2023',
+    duration: 'Jul 2024 – Apr 2025',
     location: 'Hybrid',
     summary:
       'Spearheaded infrastructure automation and container orchestration projects. Built production-grade Kubernetes clusters and implemented GitOps workflows with ArgoCD.',

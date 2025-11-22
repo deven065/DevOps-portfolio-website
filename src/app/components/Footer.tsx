@@ -19,23 +19,23 @@ export default function Footer() {
             href="https://github.com/your-username"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-gray-400 transition duration-200"
+            className="social-github hover:text-gray-400 transition duration-200"
             aria-label="GitHub"
           >
             <FaGithub />
           </a>
           <a
-            href="https://linkedin.com/in/your-profile"
+            href="https://www.linkedin.com/in/dipenrikkaame/"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-blue-500 transition duration-200"
+            className="social-linkedin hover:text-blue-500 transition duration-200"
             aria-label="LinkedIn"
           >
             <FaLinkedin />
           </a>
           <a
             href="mailto:you@example.com"
-            className="hover:text-red-400 transition duration-200"
+            className="social-email hover:text-red-400 transition duration-200"
             aria-label="Email"
           >
             <FaEnvelope />
